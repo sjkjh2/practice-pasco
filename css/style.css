@@ -1,0 +1,28 @@
+@charset "utf-8";
+body { background:blue; }
+/* 헤더 */
+#header { width:100%; height:40px; background-color:#191919; }
+
+.logo { position:absolute; left:0; top:60px; font-size:2.4rem; color:#fff; letter-spacing:2px; }
+.logo a { display:block; }
+
+.user-util { position:absolute; right:0; top:7px; font-size:1.4rem; color:rgba(255, 255, 255, 0.5); }
+.user-util a { display:block; }
+.user-util .material-icons { position:relative; top:4px; font-size:1.8rem; color:rgba(255, 255, 255, 0.38); }
+.user-util .is-bar { display:block; margin:3px 20px 0; width:1px; height:20px; background-color:rgba(180, 180, 180, 0.38); }
+
+#gnb { position:absolute; left:200px; top:60px; color:#fff; }
+#gnb .btn-menu { display:none; }
+#gnb li { margin:0 12px; }
+#gnb li:hover::after { content:''; display:block; position:relative; top:8px; width:100%; height:3px; background-color:#ff4081; }
+#gnb li a { display:block; }
+#gnb li a .material-icons { position:relative; left:2px; top:4px; font-size:20px; }
+
+.system-util { position:absolute; right:0; top:62px; color:#fff; }
+.system-util li .is-bar { display:block; margin:-2px 20px 0; width:1px; height:30px; background-color:rgba(180, 180, 180, 0.38);}
+.system-util li a { display:block; }
+
+.social-link { position:absolute; top:10px; font-size:1.6rem; color:rgba(255, 255, 255, 0.38); }
+.social-link li { margin-right:14px; }
+.social-link li a { display:block; }
+/* 헤더 끝 */

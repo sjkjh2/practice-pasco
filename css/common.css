@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, header, section, article, div, nav, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, span, a, i, img, form, label, select, button { padding:0; margin:0; }
+ul, ol { list-style-type:none; }
+a { text-decoration:none; color:inherit; }
+img { vertical-align:top; }
+select { background-color:transparent; border:none; font:inherit; color:inherit; cursor:pointer; }
+select option { background-color:#191919; border:none; font:inherit; color:inherit; }
+button { background-color:transparent; border:none; cursor:pointer; }
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+/* font-family: 'Playfair Display', serif; */
+
+html { font-size:62.5%; font-family:'Montserrat', sans-serif; }
+body { font-size:1.4rem; }
+.ftf-mtt { font-family:'Montserrat', sans-serif; }
+.ftf-ops { font-family:'Open Sans', sans-serif; }
+.ftf-pfd { font-family:'Playfair Display', serif; }
+.ftw-300 { font-weight:300; }
+.ftw-400 { font-weight:400; }
+.ftw-500 { font-weight:500; }
+.ftw-600 { font-weight:600; }
+.ftw-700 { font-weight:700; }
+.ftw-800 { font-weight:800; }
+.ftw-900 { font-weight:900; }
+
+/* 유틸 */
+.u-clearfix { *zoom:1; } /* ie8 이하 버전 대응 */
+.u-clearfix::after { content:''; display:block; clear:both; }
+.u-blind { overflow:hidden; display:block; position:absolute; left:-9999em; top:-9999em; }
+
+/* 레이아웃 */
+#wrap { width:100%; }
+.l-wrapper { position:relative; margin:0 auto; width:1170px; }
+.l-col-left { float:left; }
+.l-col-right { float:right; }
