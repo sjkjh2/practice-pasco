@@ -21,20 +21,20 @@
 <!-- 헤더 -->
         <header id="header">
             <section class="l-wrapper">
-                <h1 class="logo"><a href="/" title="Go to Home">PASCO</a></h1>
+                <h1 class="logo color-fff-10"><a href="/" title="Go to Home">PASCO</a></h1>
 <!-- 유저 로그인 및 언어 선택 -->
-                <nav class="user-util">
+                <nav class="user-util color-fff-05">
                     <h2 class="u-blind">User Control</h2>
                     <ul class="u-clearfix ftw-600">
                         <li class="account l-col-left">
                             <a href="#" target="_blank">
-                                <i class="material-icons">account_circle</i>
+                                <i class="material-icons color-fff-04">account_circle</i>
                                 <span>SIGN IN</span>
                             </a>
                         </li>
                         <li class="l-col-left"><span class="is-bar"></span></li>
                         <li class="language l-col-left">
-                            <i class="material-icons">language</i>
+                            <i class="material-icons color-fff-04">language</i>
                             <label class="u-blind" for="language_choice">language choice</label>
                             <select name="language_choice" id="language_choice">
                                 <option value="english">ENG</option>
@@ -47,8 +47,7 @@
 <!-- 메인 메뉴 -->
                 <nav id="gnb" class="ftw-800">
                     <h2 class="u-blind">Main Menu</h2>
-                    <span class="test"></span>
-                    <!-- <button class="btn-menu" type="button"><i class="material-icons">menu</i></button> -->
+                    <button class="btn-menu color-fff-10" type="button"><i class="material-icons">menu</i></button>
                     <ul class="u-clearfix">
                         <li class="l-col-left"><a href="#" target="_blank">HOME<i class="material-icons">keyboard_arrow_down</i></a></li>
                         <li class="l-col-left"><a href="#" target="_blank">PORTFOLIO<i class="material-icons">keyboard_arrow_down</i></a></li>
@@ -76,12 +75,16 @@
                         <li class="l-col-left">
                             <h2 class="u-blind">Shopping</h2>
                             <a href="#"><i class="material-icons">shopping_cart</i></a>
+                            <div class="keeping">
+                                <span class="u-blind">keeping</span>
+                                <span class="keep-num">7</span>
+                            </div>
                         </li>
                     </ul>
                 </nav>
 <!-- 검색, 좋아요, 쇼핑 끝 -->
 <!-- 소셜미디어 링크  -->
-                <nav class="social-link">
+                <nav class="social-link color-fff-04">
                     <h3 class="u-blind">Social Media Link Menu</h3>
                     <ul class="u-clearfix">
                         <li class="l-col-left">
@@ -139,7 +142,41 @@
         </header>
 <!-- 헤더 끝 -->
 <!-- 메인 -->
-        <main></main>
+        <main id="main">
+<!-- 메인 비쥬얼 -->
+            <section class="main-visual">
+                <h2 class="u-blind">Intro</h2>
+                <article class="slide vi-slide01">
+                    <div class="in l-wrapper">
+                        <header class="copy">
+                            <h3 class="ftw-500 color-fff-07">INSPIRATION</h3>
+                            <p class="ftw-900 color-fff-10">5 Ways milllennials can start<br>building their future today</p>
+                            <div class="btn-more ftw-500 color-fff-10">
+                                <a href="#" target="_blank">READ MORE</a>
+                            </div>
+                        </header>
+                        <div class="profile">
+                            <div class="person">
+                                <a href="#" target="_blank">
+                                <span class="pic"><img src="img/pic-person01.jpg" alt="Henry Little"></span>
+                                <p class="name ftw-600 color-fff-10">Henry Little</p>
+                                </a>
+                                <p class="date ftw-500 color-fff-05"><time datetime="2016-04-28 10:15"><span>Apri 28. 2016</span> <span>10:15</span></time></p>
+                            </div>
+                            <div class="feedback ftw-500 color-fff-05">
+                                <a href="#" target="_blank" class="comment">
+                                    <span><i class="material-icons">forum</i></span> <span>Comments</span> <span class="cmt-num">&#40; 28 &#41;</span>
+                                </a>
+                                <a href="#" target="_blank" class="likes">
+                                    <span><i class="material-icons">favorite_border</i></span> <span>Likes</span> <span class="lke-num">&#40; 07 &#41;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+<!-- 메인 비쥬얼 끝 -->
+        </main>
 <!-- 메인 끝 -->
 <!-- 푸터 -->
         <footer></footer>

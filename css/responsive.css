@@ -1,4 +1,9 @@
 @charset "utf-8";
+/* 와이드 */
+@media ( min-width: 2560px ) {
+    .main-visual { margin:0 auto; width:1980px; }
+}
+
 /* 아이패드 */
 @media ( max-width: 1024px ) {
     /* 헤더 */
@@ -7,19 +12,24 @@
     
     .l-wrapper { margin:0 auto; width:90%; }
 
-    .logo { position:absolute; left:50%; top:61px; z-index:20; transform:translateX(-50%); }
+    .logo { position:absolute; left:50%; top:61px; transform:translateX(-50%); }
 
     .user-util { width:100%; }
     .user-util .account { float:right; }
     .user-util .is-bar { display:none; }
     .user-util .language { float:left; }
 
-    #gnb { z-index:30; left:0px; top:63px; }
-    #gnb .btn-menu { display:block; color:#fff; }
-    #gnb .test { display:block; z-index:50; width:30px; height:30px; background-color:#fff; mask:url('../img/baseline-menu-24px.svg') no-repeat 50% 50%; mask-size:cover; -webkit-mask:url('../img/baseline-menu-24px.svg') no-repeat 50% 50%; -webkit-mask-size:cover; }
+    #gnb { left:0px; top:63px; }
+    #gnb .btn-menu { display:block; }
     #gnb ul li { display:none; }
-    .social-link { display: none; }
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    .system-util { right:10px; z-index:20; }
+    .system-util li:nth-child(1),
+    .system-util li:nth-child(3),
+    .system-util li .is-bar { display:none; }
+    .system-util li .keeping { display:block; position:absolute; right:-20px; top:-15px; text-align:center; line-height:1.9; }
+    .system-util li .keeping .keep-num { display:block; width:24px; height:24px; background-color:#ff4081; border-radius:50%; }
+
+    .social-link { display: none; }
     /* 헤더 */
 }
