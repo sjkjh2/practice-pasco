@@ -9,6 +9,7 @@
 .user-util a { display:block; }
 .user-util .material-icons { position:relative; top:4px; font-size:1.8rem; }
 .user-util .is-bar { display:block; margin:3px 20px 0; width:1px; height:20px; background-color:rgba(180, 180, 180, 0.38); }
+.user-util .language select option { background-color:#191919; }
 
 #gnb { position:absolute; left:200px; top:60px; z-index:20; color:#fff; }
 #gnb .btn-menu { display:none; }
@@ -29,9 +30,10 @@
 /* 헤더 끝 */
 
 /* 메인 */
+main { padding-bottom:1000px; }
 .main-visual { width:100%; height:800px; text-align:center; }
-.main-visual .slide { width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-size:cover; }
-.main-visual .vi-slide01 { background:url(../img/vi-slide-bg01.jpg); }
+.main-visual .slide { width:100%; height:100%;  }
+.main-visual .vi-slide01 { background:url(../img/vi-slide-bg01.jpg) no-repeat center; background-size:cover; }
 .main-visual .slide .in { padding-top:240px; }
 .main-visual .slide .in .copy h3 { font-size:2rem; }
 .main-visual .slide .in .copy p { padding-top:30px; font-size:4.2rem; text-transform:uppercase; letter-spacing:1.5px; }
@@ -47,5 +49,36 @@
 .main-visual .slide .in .profile .feedback { padding-top:30px; }
 .main-visual .slide .in .profile .feedback .comment { padding-right:20px; }
 .main-visual .slide .in .profile .feedback .material-icons { position: relative; top:2px; font-size:1.4rem; }
+.main-visual .ctr-slide .prev { position:absolute; left:-300px; top:-460px; }
+.main-visual .ctr-slide .next { position:absolute; right:-300px; top:-460px; }
+.main-visual .ctr-slide button .material-icons { font-size:4.2rem; }
+
+.sort-menu { width:100%; height:60px; background-color:#fff; border-bottom: 2px solid #dddddd; font-size:1.4rem; }
+.sort-menu .in { padding-top:22px; }
+.sort-menu .in h2 { padding-right:20px; }
+.sort-menu .in ul li { padding-right:20px; }
+.sort-menu .in ul li a { padding:10px 30px; background-color:#f5f5f5; border:1px solid #f5f5f5; border-radius:50px; }
+.sort-menu .in ul li.is-active a { border:1px solid #3f51b5; color:#3f51b5; }
+.sort-menu .in ul li a:hover, 
+.sort-menu .in ul li a:focus { border:1px solid #3f51b5; color:#3f51b5; }
+
+.contents { padding-top:30px; }
+
+.sidebar { padding:25px 25px 0 25px; width:310px; height:100%; background-color:#fff; }
+.sidebar .box { padding-top:30px; }
+.sidebar .box .title { padding-bottom:10px; margin-bottom:5px; border-bottom:1px solid #aec3ff; font-size:1.8rem; color:#3f51b5; letter-spacing:1.3px; }
+
+.search { width:100%; font-size:2.4rem; }
+.search .border_window { display:block; padding:2px 0 0 20px; width:100%; height:45px; background-color:#f5f5f5; border-radius:50px; box-sizing:border-box; }
+.search .border_window input { width:240px; font-size:1.8rem; background-color:transparent; }
+.search .border_window input::placeholder { color:rgba(0, 0, 0, 0.4); }
+.search .border_window button { position: relative; right:-3px; top:3px; width:35px; height:35px; background-color:#ff4081; border-radius:50%; box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.1); }
+.search .border_window button .material-icons { position:relative; left:0; top:3px; color:#fff; }
+
+.categories ul li { border-bottom:1px solid rgba(0, 0, 0, 0.1);  }
+.categories ul li:last-child { border-bottom:1px solid #fff; }
+.categories ul li a { display:block; padding:12px 0; }
+.categories ul li .ctg-text {  }
+.categories ul li .ctg-num {  }
 
 /* 메인 끝 */
