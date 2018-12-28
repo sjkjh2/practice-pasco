@@ -205,7 +205,7 @@
                 <form id="search-form" name="search-form" action="#" method="get">
                     <fieldset>
                     <legend class="u-blind">Search</legend>
-                    <span class="border_window">
+                    <span class="border_window ftf-ops">
                         <input type="search" name="enter_search" id="enter_search" placeholder="Search">
                         <button type="button"><i class="material-icons">search</i></button>
                     </span>
@@ -216,44 +216,44 @@
 <!-- 카테고리 -->
                 <section class="categories box">
                     <h3 class="title">CATEGORISES</h3>
-                    <ul class="color-000-08">
+                    <ul class="ftf-ops color-000-08">
                         <li>
                         <a href="#" target="_blank" class="u-clearfix">
                             <span class="ctg-text ftw-600 l-col-left">Photography</span>
-                            <span class="ctg-num ftf-ops ftw-700 l-col-right">195</span>
+                            <span class="ctg-num ftw-700 l-col-right">195</span>
                         </a>
                         </li>
                         <li>
                         <a href="#" target="_blank" class="u-clearfix">
                             <span class="ctg-text ftw-600 l-col-left">Illustration</span>
-                            <span class="ctg-num ftf-ops ftw-700 l-col-right">15</span>
+                            <span class="ctg-num ftw-700 l-col-right">15</span>
                         </a>
                         </li>
                         <li>
                         <a href="#" target="_blank" class="u-clearfix">
                             <span class="ctg-text ftw-600 l-col-left">Graphic Design</span>
-                            <span class="ctg-num ftf-ops ftw-700 l-col-right">36</span>
+                            <span class="ctg-num ftw-700 l-col-right">36</span>
                         </a>
                         </li>
                         <li>
                         <a href="#" target="_blank" class="u-clearfix">
                             <span class="ctg-text ftw-600 l-col-left">Web design</span>
-                            <span class="ctg-num ftf-ops ftw-700 l-col-right">220</span>
+                            <span class="ctg-num ftw-700 l-col-right">220</span>
                         </a>
                         </li>
                         <li>
                         <a href="#" target="_blank" class="u-clearfix">
                             <span class="ctg-text ftw-600 l-col-left">Videography</span>
-                            <span class="ctg-num ftf-ops ftw-700 l-col-right">17</span>
+                            <span class="ctg-num ftw-700 l-col-right">17</span>
                         </a>
                         </li>
                     </ul>
                 </section>
 <!-- 카테고리 끝 -->
 <!-- 구독 폼 -->
-                <section class="box">
+                <section class="subscribe box">
                     <h3 class="title">SUBSCRIBE</h3>
-                    <form id="subscribe-form" name="subscribe-form" action="#" method="post">
+                    <form id="subscribe-form" name="subscribe-form" action="#" method="post" class="ftf-ops color-000-08">
                         <fieldset>
                         <legend class="u-blind">Subscribe</legend>
                         <label for="user-name">Name</label>
@@ -261,43 +261,43 @@
                         <label for="user-mail">Email</label>
                         <input type="email" name="user-mail" id="user-mail" placeholder="email@address.com">
                         </fieldset>
-                        <button type="submit">SUBSCRIBE</button>
+                        <button type="submit" class="ftf-mtt ftw-600 color-fff-10">SUBSCRIBE</button>
                     </form>
-                    <span>or</span>
-                    <nav class="social-ssb">
+                    <span class="is-or ftf-ops">or</span>
+                    <nav class="social-ssb color-fff-10">
                         <h3 class="u-blind">Social Media Subscribe</h3>
                         <ul class="u-clearfix">
-                            <li class="l-col-left">
+                            <li class="facebook l-col-left">
                             <a href="#" target="_blank" title="Facebook">
                                 <span class="u-blind">Facebook</span>
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                             </li>
-                            <li class="l-col-left">
+                            <li class="twitter l-col-left">
                             <a href="#" target="_blank" title="twitter">
                                 <span class="u-blind">twitter</span>
                                 <i class="fab fa-twitter"></i>
                             </a>
                             </li>
-                            <li class="l-col-left">
+                            <li class="vk l-col-left">
                             <a href="#" target="_blank" title="vk">
                                 <span class="u-blind">vk</span>
                                 <i class="fab fa-vk"></i>
                             </a>
                             </li>
-                            <li class="l-col-left">
+                            <li class="pinterest l-col-left">
                             <a href="#" target="_blank" title="pinterest">
                                 <span class="u-blind">pinterest</span>
                                 <i class="fab fa-pinterest-p"></i>
                             </a>
                             </li>
-                            <li class="l-col-left">
+                            <li class="dribbble l-col-left">
                             <a href="#" target="_blank" title="dribbble">
                                 <span class="u-blind">dribbble</span>
                                 <i class="fab fa-dribbble"></i>
                             </a>
                             </li>
-                            <li class="l-col-left">
+                            <li class="instagram l-col-left">
                             <a href="#" target="_blank" title="instagram">
                                 <span class="u-blind">instagram</span>
                                 <i class="fab fa-instagram"></i>
@@ -307,13 +307,150 @@
                     </nav>
                 </section>
 <!-- 구독 폼 끝 -->
+<!-- 탭 포스트 위젯 -->
+                <section class="post-widget box">
+                    <h3 class="title">TAB POST WIDGET</h3>
+                    <nav class="u-clearfix">
+                    <ul class="tablist" role="tablist" >
+                        <li id="tab1" class="tab l-col-left is-active" role="tab" aria-controls="tab-panel1"><button type="button" class="is-active">RECENT POST</button></li>
+                        <li id="tab2" class="tab l-col-right" role="tab" aria-controls="tab-panel2"><button type="button">POPULAR POST</button></li>
+                    </ul>
+                    </nav>
+                    <article class="post">
+                        <h4 class="u-blind">RECENT POST</h4>
+                        <!-- tab-panel1 -->
+                        <div id="tab-panel1" class="tabpanel" role="tabpanel" aria-labelledby="tab-panel1">
+                        <ul>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>             
+                        </ul>
+                        </div>
+                        <!-- tab-panel2 -->
+                        <div id="tab-panel2" class="tabpanel" role="tabpanel" aria-labelledby="tab-panel2" style="display:none;">
+                        <ul>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>
+                            <li class="box u-clearfix">
+                            <a href="#" target="_blank">
+                                <span class="pst-pic l-col-left"><img src="img/post-widget01.jpg" alt=""></span>
+                                <p class="text ftf-ops color-000-08 l-col-right">
+                                    <strong class="pst-title">Duis commodo elit sed nisi molestie</strong>
+                                    <span class="pst-util u-clearfix">
+                                        <time datetime="2016-04-28">April 28, 2016</time>
+                                        <span class="comments"><i class="material-icons">forum</i><span class="cmt-num color-000-04">17</span></span>
+                                    </span>
+                                </p>
+                            </a>
+                            </li>             
+                        </ul>
+                        </div>
+                    </article>
+                </section>
+<!-- 탭 포스트 위젯 끝 -->
+<!-- 태그 -->
+                <section class="tags box">
+                    <h3 class="title">TAGS</h3>
+                    <div class="in ftf-ops color-000-08">
+                        <span class="border"><a href="#">Photography</a></span>
+                        <span class="border"><a href="#">Webdesign</a></span><br>
+                        <span class="border"><a href="#">Youtube</a></span>
+                        <span class="border"><a href="#">Envato</a></span>
+                        <span class="border"><a href="#">Art</a></span><br>
+                        <span class="border"><a href="#">Themefotest</a></span>
+                        <span class="border"><a href="#">Illustration</a></span>
+                    </div>
+                </section>
+<!-- 태그 끝 -->
             </section>
 <!-- 사이드 바 끝 -->
+            
 <!-- 블로그 -->
             <section class="blog l-col-left">
                 <h2 class="u-blind">Blog</h2>
                 <article>
-                    하하
+                    <h3>
+                        하하
+                    </h3>
                 </article>
             </section>
 <!-- 블로그 끝 -->
